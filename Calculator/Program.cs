@@ -37,6 +37,17 @@ class SimpleCalculator
                     case "-":
                         result = num1 - num2;
                         break;
+                    case "/":
+                        if (num2 == 0)
+                        {
+                            Console.WriteLine("Ошибка: деление на ноль!");
+                            validOperation = false;
+                        }
+                        else
+                        {
+                            result = num1 / num2;
+                        }
+                        break;
                     default:
                         Console.WriteLine("Неверный оператор!");
                         validOperation = false;
