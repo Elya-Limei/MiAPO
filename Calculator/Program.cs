@@ -29,6 +29,17 @@ class SimpleCalculator
                 double result = 0;
                 bool validOperation = true;
 
+                switch (op)
+                {
+                    case "+":
+                        result = num1 + num2;
+                        break;
+                    default:
+                        Console.WriteLine("Неверный оператор!");
+                        validOperation = false;
+                        break;
+                }
+                
                 if (validOperation)
                 {
                     Console.WriteLine($"Результат: {num1} {op} {num2} = {result}");
