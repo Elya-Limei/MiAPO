@@ -37,6 +37,9 @@ class SimpleCalculator
                     case "-":
                         result = num1 - num2;
                         break;
+                    case "*":
+                        result = num1 * num2;
+                        break;
                     default:
                         Console.WriteLine("Неверный оператор!");
                         validOperation = false;
